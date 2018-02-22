@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6A16E66A203D462B00B12EBA /* tone.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 6A16E669203D462B00B12EBA /* tone.m4a */; };
 		6A2F55F9203AA1FE006BD4CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A2F55F8203AA1FE006BD4CA /* AppDelegate.swift */; };
 		6A2F55FB203AA1FE006BD4CA /* homeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A2F55FA203AA1FE006BD4CA /* homeViewController.swift */; };
 		6A2F55FD203AA1FE006BD4CA /* discoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A2F55FC203AA1FE006BD4CA /* discoverViewController.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6A16E669203D462B00B12EBA /* tone.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = tone.m4a; sourceTree = "<group>"; };
 		6A2F55F5203AA1FE006BD4CA /* TestMeditationApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestMeditationApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A2F55F8203AA1FE006BD4CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6A2F55FA203AA1FE006BD4CA /* homeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homeViewController.swift; sourceTree = "<group>"; };
@@ -68,7 +70,6 @@
 				6A4C955A203BF1A100A8A7DB /* Model */,
 				6A4C9558203BF17200A8A7DB /* controller */,
 				6A2F5601203AA1FE006BD4CA /* Assets.xcassets */,
-				6A4C955E203C3D2100A8A7DB /* sample.m4a */,
 				6A2F5603203AA1FE006BD4CA /* LaunchScreen.storyboard */,
 				6A2F5606203AA1FE006BD4CA /* Info.plist */,
 			);
@@ -82,6 +83,8 @@
 				6A2F55FC203AA1FE006BD4CA /* discoverViewController.swift */,
 				6A2F560C203AB98E006BD4CA /* accountViewController.swift */,
 				6A4C9556203BE82B00A8A7DB /* audioVewController.swift */,
+				6A16E669203D462B00B12EBA /* tone.m4a */,
+				6A4C955E203C3D2100A8A7DB /* sample.m4a */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -161,6 +164,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A16E66A203D462B00B12EBA /* tone.m4a in Resources */,
 				6A2F5605203AA1FE006BD4CA /* LaunchScreen.storyboard in Resources */,
 				6A2F5602203AA1FE006BD4CA /* Assets.xcassets in Resources */,
 				6A2F5600203AA1FE006BD4CA /* Main.storyboard in Resources */,

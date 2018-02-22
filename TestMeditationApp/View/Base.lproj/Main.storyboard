@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m18-DI-R6d">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m18-DI-R6d">
                                 <rect key="frame" x="141" y="312" width="92" height="42"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="selected">
@@ -28,7 +28,7 @@
                                     <action selector="selected:" destination="9pv-A4-QxB" eventType="touchUpInside" id="Aog-fm-VIc"/>
                                 </connections>
                             </button>
-                            <pickerView contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UZV-1t-1Ry">
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UZV-1t-1Ry">
                                 <rect key="frame" x="0.0" y="76" width="375" height="216"/>
                             </pickerView>
                         </subviews>
@@ -75,7 +75,8 @@
                                 <navigationItem title="Audio File" id="0Ud-EV-KOU">
                                     <barButtonItem key="leftBarButtonItem" style="plain" systemItem="cancel" id="D9v-SC-cge">
                                         <connections>
-                                            <segue destination="9pv-A4-QxB" kind="show" id="Hfj-SH-Esy"/>
+                                            <action selector="cancelButton:" destination="mja-Zl-3Id" id="H0L-xc-dcP"/>
+                                            <segue destination="49e-Tb-3d3" kind="show" identifier="rootTable" id="cmX-iN-b79"/>
                                         </connections>
                                     </barButtonItem>
                                 </navigationItem>
@@ -138,6 +139,7 @@
         <scene sceneID="yl2-sM-qoP">
             <objects>
                 <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="4UG-Z7-fhA"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
                         <rect key="frame" x="0.0" y="975" width="768" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
@@ -158,7 +160,4 @@
         <image name="first" width="30" height="30"/>
         <image name="second" width="30" height="30"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="Hfj-SH-Esy"/>
-    </inferredMetricsTieBreakers>
 </document>

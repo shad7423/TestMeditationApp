@@ -12,7 +12,10 @@ class discoverViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        let v = UIView(frame:CGRect(x:0, y:0, width:50, height:50))
+        v.backgroundColor = .red // small red square
+        self.view.addSubview(v) // add it to main view
     }
 
     override func didReceiveMemoryWarning() {
