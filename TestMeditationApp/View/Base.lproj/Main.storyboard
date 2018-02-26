@@ -83,17 +83,17 @@
                             </items>
                         </navigationBar>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="58" id="nDB-Cj-4rv">
-                                <rect key="frame" x="0.0" y="72" width="375" height="58"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="15" id="nDB-Cj-4rv">
+                                <rect key="frame" x="0.0" y="72" width="375" height="15"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="nDB-Cj-4rv" id="fRA-h9-l70">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="57.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="14.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
                         <connections>
-                            <outlet property="dataSource" destination="mja-Zl-3Id" id="7XP-Qg-1x5"/>
+                            <outlet property="dataSource" destination="mja-Zl-3Id" id="cVP-Th-0V3"/>
                             <outlet property="delegate" destination="mja-Zl-3Id" id="Ajb-L5-gp7"/>
                         </connections>
                     </tableView>

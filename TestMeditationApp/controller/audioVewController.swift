@@ -19,7 +19,7 @@ class audioViewController : UITableViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        tableView.rowHeight = 90.0
+        tableView.rowHeight = 255.0
         //playAudioFile()
         
         
