@@ -6,25 +6,27 @@
 //  Copyright © 2018 Shadab Khan. All rights reserved.
 //
 
-import Foundation
 import UIKit
 import AVFoundation
-import AudioToolbox
 
-class audioViewController : UITableViewController{
-    var audioPlayer : AVAudioPlayer?
+
+class audioViewController : UITableViewController,AVAudioPlayerDelegate{
+    var audioPlayer : AVAudioPlayer = AVAudioPlayer()
     var audioFile = audioModel()
     var audioArray = ["FOUNDATION" , "HEALTH", "BRAVE" , "HAPPINESS" ,"WORK & PERFORMANCE", "STUDENT","SPORT"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        tableView.rowHeight = 255.0
-        //playAudioFile()
+        tableView.rowHeight = 140.0
+        playAudioFile()
         
         
     }
     
+   // @IBAction func nextToAudioPlayer(_ sender: Any) {
+    //    self.performSegue(withIdentifier: "avPlayer", sender: self)
+   // }
     @IBAction func cancelButton(_ sender: Any) {
         self.performSegue(withIdentifier: "rootTable", sender: self)
     }
@@ -45,15 +47,18 @@ class audioViewController : UITableViewController{
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
+        if audioPlayer.isPlaying {
+            audioPlayer.stop()
+        }else {
+            audioPlayer.play()
+        }
         
-       //let audioPlayer = Bundle.main.url(forResource: "sample", withExtension: "m4a")
-        playAudioFile()
     
        
     }
     
     func playAudioFile() {
-        print("plau func call")
+        print("play func call")
         guard let url = Bundle.main.url(forResource: "tone", withExtension: "m4a")
             else {
                 print("return")
@@ -61,14 +66,9 @@ class audioViewController : UITableViewController{
                }
         
         do {
-            try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback)
-            try AVAudioSession.sharedInstance().setActive(true)
-            
-            // For iOS 11
-            audioPlayer = try AVAudioPlayer(contentsOf: url)//, fileTypeHint: AVFileType.m4a.rawValue)
-            
-            guard let avPlayer = audioPlayer else { return }
-            avPlayer.play()
+            audioPlayer = try AVAudioPlayer(contentsOf: url)
+            audioPlayer.prepareToPlay()
+            //audioPlayer.play()
             print("play success")
             
         } catch let error {

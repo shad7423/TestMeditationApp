@@ -32,7 +32,7 @@
                                 <rect key="frame" x="0.0" y="76" width="375" height="216"/>
                             </pickerView>
                         </subviews>
-                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.96423226594924927" green="0.81797257535283163" blue="0.48787210166835621" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="UZV-1t-1Ry" firstAttribute="trailing" secondItem="PQr-Ze-W5v" secondAttribute="trailing" id="1x1-Bt-2CT"/>
@@ -67,6 +67,7 @@
                         <navigationBar key="tableHeaderView" contentMode="scaleToFill" barStyle="black" id="oIg-BW-10L">
                             <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="0.51916707399999995" green="0.65692850390000002" blue="0.96620899439999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             <color key="barTintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <textAttributes key="titleTextAttributes">
                                 <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="17"/>
@@ -77,6 +78,11 @@
                                         <connections>
                                             <action selector="cancelButton:" destination="mja-Zl-3Id" id="H0L-xc-dcP"/>
                                             <segue destination="49e-Tb-3d3" kind="show" identifier="rootTable" id="cmX-iN-b79"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem key="rightBarButtonItem" title="Next" style="plain" id="8uU-I4-XTV">
+                                        <connections>
+                                            <segue destination="qYa-Se-OET" kind="show" id="eLI-km-Lhk"/>
                                         </connections>
                                     </barButtonItem>
                                 </navigationItem>
@@ -90,6 +96,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="14.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.9642322659" green="0.81797257540000001" blue="0.4878721017" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -102,6 +109,38 @@
             </objects>
             <point key="canvasLocation" x="1546.4000000000001" y="-925.18740629685169"/>
         </scene>
+        <!--Player Controller-->
+        <scene sceneID="C6T-r6-i1E">
+            <objects>
+                <viewController id="qYa-Se-OET" customClass="playerController" customModule="TestMeditationApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="y6d-D0-1hY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vQm-sT-hdb" customClass="TTNavigationBar" customModule="TestMeditationApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="21" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <items>
+                                    <navigationItem title="player" id="izy-iR-xB8" userLabel="player">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="done" id="iUb-RR-jWd">
+                                            <connections>
+                                                <segue destination="mja-Zl-3Id" kind="show" id="uoL-Bv-sdm"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" red="0.9642322659" green="0.81797257540000001" blue="0.4878721017" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <viewLayoutGuide key="safeArea" id="dZL-bS-fhG"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zbG-RY-9Mw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2270" y="-925"/>
+        </scene>
         <!--Account-->
         <scene sceneID="Ql3-5x-s4k">
             <objects>
@@ -109,7 +148,7 @@
                     <view key="view" contentMode="scaleToFill" id="jSX-iF-5ke">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.9642322659" green="0.81797257540000001" blue="0.4878721017" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="0O9-6u-Oaq"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Account" image="first" id="ki2-aU-4PJ" userLabel="Third"/>
@@ -126,7 +165,7 @@
                     <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.9642322659" green="0.81797257540000001" blue="0.4878721017" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Discover" image="second" id="cPa-gy-q4n"/>
@@ -160,4 +199,7 @@
         <image name="first" width="30" height="30"/>
         <image name="second" width="30" height="30"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="uoL-Bv-sdm"/>
+    </inferredMetricsTieBreakers>
 </document>
